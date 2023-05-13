@@ -3,7 +3,7 @@
 Public Class Checkout
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-        Purchase.Show()
+        Data.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -11,7 +11,7 @@ Public Class Checkout
         Product.Show()
     End Sub
 
-    Private Sub nameTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles nameTxt.Validating
+    Private Sub NameTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles nameTxt.Validating
         If String.IsNullOrEmpty(nameTxt.Text) Then
             e.Cancel = True
             ErrorProvider1.SetError(nameTxt, "Please Enter A Name.")
@@ -20,7 +20,7 @@ Public Class Checkout
         End If
     End Sub
 
-    Private Sub cityTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles cityTxt.Validating
+    Private Sub CityTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles cityTxt.Validating
         If String.IsNullOrEmpty(cityTxt.Text) Then
             e.Cancel = True
             ErrorProvider1.SetError(cityTxt, "Please Enter a City.")
@@ -29,7 +29,7 @@ Public Class Checkout
         End If
     End Sub
 
-    Private Sub zipTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles zipTxt.Validating
+    Private Sub ZipTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles zipTxt.Validating
         If Not IsValidZipCode(zipTxt.Text) Then
             e.Cancel = True
             ErrorProvider1.SetError(zipTxt, "Please Enter A Zip Code.")
@@ -56,7 +56,7 @@ Public Class Checkout
 
 
 
-    Private Sub cardNumberTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles cardNumberTxt.Validating
+    Private Sub CardNumberTxt_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles cardNumberTxt.Validating
         If Not IsValidCreditCard(cardNumberTxt.Text) Then
             e.Cancel = True
             ErrorProvider1.SetError(cardNumberTxt, "Please Enter a Valid Credit Card Number.")

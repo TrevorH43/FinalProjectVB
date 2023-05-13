@@ -67,7 +67,7 @@ Partial Class Checkout
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Home"
+        Me.Button3.Text = "Next"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel1
