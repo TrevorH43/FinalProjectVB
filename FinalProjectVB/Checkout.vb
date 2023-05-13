@@ -3,7 +3,7 @@
 Public Class Checkout
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-        Form1.Show()
+        Purchase.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -99,11 +99,6 @@ Public Class Checkout
                               "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"})
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim selectedState As String = stateTxt.SelectedItem.ToString()
-        MessageBox.Show("You selected " & selectedState & ".", "State Selected")
-
-    End Sub
 
     Private Sub DateTimePicker1_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles expDatePicker.Validating
         Dim expDate As Date = expDatePicker.Value.Date
@@ -117,5 +112,9 @@ Public Class Checkout
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
     End Sub
 End Class
