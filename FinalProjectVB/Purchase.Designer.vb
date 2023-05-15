@@ -98,7 +98,7 @@ Partial Class Purchase
         '
         Me.PictureBox1.Location = New System.Drawing.Point(80, 19)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(226, 92)
+        Me.PictureBox1.Size = New System.Drawing.Size(226, 116)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False

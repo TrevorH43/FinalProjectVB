@@ -47,6 +47,9 @@ Partial Class Product
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -190,35 +193,39 @@ Partial Class Product
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(79, 202)
+        Me.Label4.Location = New System.Drawing.Point(81, 241)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 16)
+        Me.Label4.Size = New System.Drawing.Size(37, 18)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "300$"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(79, 198)
+        Me.Label5.Location = New System.Drawing.Point(77, 237)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(35, 16)
+        Me.Label5.Size = New System.Drawing.Size(37, 18)
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "450$"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(89, 191)
+        Me.Label6.Location = New System.Drawing.Point(90, 230)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(35, 16)
+        Me.Label6.Size = New System.Drawing.Size(37, 18)
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "400$"
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Button2)
@@ -232,6 +239,7 @@ Partial Class Product
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.PictureBox2)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label5)
@@ -245,6 +253,7 @@ Partial Class Product
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Controls.Add(Me.PictureBox3)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.Label6)
@@ -270,6 +279,39 @@ Partial Class Product
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(38, 20)
         Me.ToolStripMenuItem1.Text = "Exit"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(74, 145)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(64, 18)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Terrance"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(70, 152)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(44, 18)
+        Me.Label8.TabIndex = 18
+        Me.Label8.Text = "Colby"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(70, 149)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(62, 18)
+        Me.Label9.TabIndex = 19
+        Me.Label9.Text = "Chowder"
         '
         'Product
         '
@@ -324,4 +366,7 @@ Partial Class Product
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
 End Class

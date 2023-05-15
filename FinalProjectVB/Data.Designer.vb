@@ -42,7 +42,7 @@ Partial Class Data
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Breed, Me.Column2, Me.Column3, Me.Column4, Me.Column1})
         Me.DataGridView1.Location = New System.Drawing.Point(116, 68)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(542, 131)
+        Me.DataGridView1.Size = New System.Drawing.Size(542, 158)
         Me.DataGridView1.TabIndex = 28
         '
         'Breed
